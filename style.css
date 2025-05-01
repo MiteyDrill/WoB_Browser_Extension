@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Chat Avatar Injector",
+    "version": "1.0",
+    "permissions": ["storage", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://example.com/*"],
+        "js": ["inject.js"]
+      }
+    ]
+  }
+  

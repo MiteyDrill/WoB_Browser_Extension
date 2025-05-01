@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "WoB Chat Avatar Injector",
+    "description": "Apply an Avatar Image to a specific user within the WoB chat",
+    "version": "1.0",
+    "permissions": ["storage", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://worldofbleach-rpg.com/?id=3"],
+        "js": ["inject.js"]
+      }
+    ]
+  }
+  
