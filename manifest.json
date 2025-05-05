@@ -9,7 +9,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["*://worldofbleach-rpg.com/?id=3"],
+        "matches": ["*://worldofbleach-rpg.com/?id=*"],
         "js": ["inject.js"]
       }
     ]

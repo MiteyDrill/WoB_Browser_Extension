@@ -53,4 +53,25 @@ window.addEventListener("load", () => {
 
     console.log("Chat Avatar Injector Started");
   });
+
+  //Inject Battle Journal
+  function insertBattleJournal(){
+
+    let classElement = document.getElementsByClassName('fighterInfoDisplay');
+    const fighterDiv = classElement[1];
+    fighterDiv.style.flexDirection = 'column';
+
+    const journalDiv = document.createElement('textarea');
+    journalDiv.textContent = 'Battle Notes:';
+    journalDiv.style.height = '150px';
+    journalDiv.style.width = '100%';
+    journalDiv.style.margin = '3em';
+    
+    fighterDiv.append(journalDiv);
+
+    console.log("Battle Journal Injected");
+  }
+
+  insertBattleJournal();
+
 });
